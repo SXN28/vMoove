@@ -5,7 +5,14 @@ module.exports = {
     "./templates/**/*.html.twig",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // Ajoutez ou modifiez des couleurs ici
+        primary: '#333333', // Rouge
+        secondary: '#00FF00', // Vert
+        accent: '#0000FF', // Bleu
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')
