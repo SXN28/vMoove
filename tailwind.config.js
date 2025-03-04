@@ -7,16 +7,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Ajoutez ou modifiez des couleurs ici
-        fond: '#333333', // Rouge
-        secondary: '#00FF00', // Vert
-        bleu: '#0968E7', // Bleu
+        // Vos couleurs personnalisées
+        fond: '#333333', 
+        secondary: '#00FF00', 
+        bleu: '#0968E7', 
+      },
+      backgroundColor: {
+        // Étendez explicitement les couleurs pour le background
+        'fond': '#333333',
+        'secondary': '#00FF00',
+        'bleu': '#0968E7',
       },
 
       fontFamily: {
-        'bridgend': ['bridgend', 'sans-serif'], // Assurez-vous que c'est exactement comme ceci
+        'bridgend': ['bridgend', 'sans-serif'],
       },
-
       
       fontSize: {
         '6xl': '4rem',
@@ -33,6 +38,5 @@ module.exports = {
     require('flowbite/plugin')
   ],
 }
-
 
 //symfony console tailwind:build --watch
